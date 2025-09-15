@@ -1,0 +1,22 @@
+Flujo típico de trabajo en Git
+1. Clonás el repositorio remoto:
+git clone https://github.com/Muslera/utn-carlos-muslera-999200925
+.git
+2. Te movés a la rama principal y creás una rama nueva, dos posibles opciones:
+Salis de la rama actual y vas hacia master
+git checkout master
+Salis de la rama actual, haces una copia identica y vas hacia esta, ahora llamada
+nombre-rama
+git checkout -b nombre-rama
+3. Desarrollás tu funcionalidad:
+- Modificás archivos
+- git add .
+- git commit -m "Agrega X"
+4. Subís la rama al remoto:
+git push origin nombre-rama
+5. Abrís un Pull Request (PR) o Merge Request (MR):
+- Proponés unir tu rama a master o main
+- Otro miembro del equipo revisa el código
+6. Si se aprueba, se hace el merge:
+- Tu código se integra a la rama principal
+7. La rama master ahora tiene tu funcionalidad lista para producción
